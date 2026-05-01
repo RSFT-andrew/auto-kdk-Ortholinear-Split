@@ -1,0 +1,14 @@
+
+file_format: "1"
+id: ortholinear_spl
+name: ortholinear_spl
+type: shield
+features:
+  - keys
+  - studio
+outputs:
+  - usb
+  - ble
+siblings:
+  - ortholinear_spl_left
+  - ortholinear_spl_right
