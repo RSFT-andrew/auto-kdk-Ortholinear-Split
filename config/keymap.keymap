@@ -20,12 +20,12 @@
     keymap {
         compatible = "zmk,keymap";
 
-        layer_0 {
+        default-Layer {
             bindings = <
-&kp W             &kp E                   &kp LEFT_PARENTHESIS  &kp I          &kp RIGHT_PARENTHESIS                                             &none        &none  &none  &none  &none  &none
-&kp A             &kp U                   &kp X                 &kp C          &kp O                                                             &none        &none  &none  &none  &none  &none
-&kp Q             &mt AMPERSAND QUESTION  &kp J                 &kp V          &lt 4 COMMA            &kp PERIOD                                 &none        &none  &none  &none  &none  &none
-&lt 6 LANGUAGE_2  &none                   &kp LG(Z)             &kp LS(LG(Z))  &kp LEFT_SHIFT         &kp SPACE   &mkp MB1  &new_behavior 3 MB1  &lt 4 ENTER                &none  &none  &none
+&kp W             &kp E                   &kp LEFT_PARENTHESIS  &kp I          &kp RIGHT_PARENTHESIS                                             &none          &kp F  &kp S  &kp Y                &kp H                  &kp P
+&kp A             &kp U                   &kp X                 &kp C          &kp O                                                             &none          &kp R  &kp K  &kp T                &kp D                  &kp N
+&kp Q             &mt AMPERSAND QUESTION  &kp J                 &kp V          &lt 4 COMMA            &kp PERIOD                                 &kp BACKSPACE  &kp Z  &kp G  &kp B                &kp L                  &kp M
+&lt 6 LANGUAGE_2  &none                   &kp LG(Z)             &kp LS(LG(Z))  &kp LEFT_SHIFT         &kp SPACE   &mkp MB1  &new_behavior 3 MB1  &lt 5 ENTER                  &mt RIGHT_ALT MINUS  &mt RIGHT_CONTROL TAB  &mt RIGHT_COMMAND LANGUAGE_1
             >;
         };
 
