@@ -3,15 +3,29 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
+    behaviors {
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NEW_BEHAVIOR";
+            bindings = <&mo>, <&mkp>;
+
+            #binding-cells = <2>;
+            hold-trigger-key-positions = <41>;
+            quick-tap-ms = <(-1)>;
+            require-prior-idle-ms = <(-1)>;
+            tapping-term-ms = <200>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         layer_0 {
             bindings = <
-&kp W             &kp E                   &kp LEFT_PARENTHESIS  &kp I          &kp RIGHT_PARENTHESIS                               &none  &none  &none  &none  &none  &none
-&kp A             &kp U                   &kp X                 &kp C          &kp O                                               &none  &none  &none  &none  &none  &none
-&kp Q             &mt AMPERSAND QUESTION  &kp J                 &kp V          &lt 4 COMMA            &kp PERIOD                   &none  &none  &none  &none  &none  &none
-&lt 6 LANGUAGE_2  &none                   &kp LG(Z)             &kp LS(LG(Z))  &kp LEFT_SHIFT         &kp SPACE   &mkp MB1  &none  &none                &none  &none  &none
+&kp W             &kp E                   &kp LEFT_PARENTHESIS  &kp I          &kp RIGHT_PARENTHESIS                                             &none        &none  &none  &none  &none  &none
+&kp A             &kp U                   &kp X                 &kp C          &kp O                                                             &none        &none  &none  &none  &none  &none
+&kp Q             &mt AMPERSAND QUESTION  &kp J                 &kp V          &lt 4 COMMA            &kp PERIOD                                 &none        &none  &none  &none  &none  &none
+&lt 6 LANGUAGE_2  &none                   &kp LG(Z)             &kp LS(LG(Z))  &kp LEFT_SHIFT         &kp SPACE   &mkp MB1  &new_behavior 3 MB1  &lt 4 ENTER                &none  &none  &none
             >;
         };
 
