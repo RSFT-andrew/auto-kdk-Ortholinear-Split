@@ -14,20 +14,6 @@
 #define WIRELESS 6
 #define LAYER7  7
 
-/ {
-    /* トラックボールをスクロールに変換する魔法のコード */
-    trackball_listener {
-        compatible = "zmk,input-behavior-listener";
-        device = <&trackball_split>;
-        layers = <SCROLL>;
-        evt-type = <INPUT_EV_REL>;
-        x-input-code = <INPUT_REL_X>;
-        y-input-code = <INPUT_REL_Y>;
-        scale-multiplier = <1>;
-        scale-divisor = <1>;
-        bindings = <&ib_wheel_scaler 1 14>;
-    };
-
     behaviors {
         new_behavior: new_behavior {
             compatible = "zmk,behavior-hold-tap";
