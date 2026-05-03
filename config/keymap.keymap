@@ -15,6 +15,18 @@
 #define LAYER7  7
 
 / {
+    /* トラックボールの挙動を制御するリスナー */
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball_split>;
+
+        /* スクロールレイヤー(SCROLL)が有効な時だけ発動する処理 */
+        scroll {
+            layers = <SCROLL>;
+            input-processors = <&zip_xy_to_scroll_mapper>;
+        };
+    };
+
     behaviors {
         new_behavior: new_behavior {
             compatible = "zmk,behavior-hold-tap";
