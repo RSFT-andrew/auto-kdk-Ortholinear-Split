@@ -59,9 +59,9 @@
         default_layer {
             bindings = <
 &kp W             &kp E                   &kp LEFT_PARENTHESIS  &kp I          &kp RIGHT_PARENTHESIS                                      &none          &kp F  &kp S  &kp Y                &kp H                  &kp P
-&kp A             &kp U                   &kp X                 &kp C          &kp O                                                      &none          &kp R  &kp K  &kp T                &kp D                  &kp N
-&kp Q             &mt AMPERSAND QUESTION  &kp J                 &kp V          &lt 4 COMMA            &kp PERIOD                          &kp BACKSPACE  &kp Z  &kp G  &kp B                &kp L                  &kp M
-&lt 7 LANGUAGE_2  &tog 1                  &kp LG(Z)             &kp LS(LG(Z))  &kp LEFT_SHIFT         &kp SPACE   &mkp MB1  &mky_L 5 MB2  &lt 3 ENTER                  &mt RIGHT_ALT MINUS  &mt RIGHT_CONTROL TAB  &mt RIGHT_COMMAND LANGUAGE_1
+&kp A             &kp U                   &kp X                 &kp C          &kp O                                                      &tog 3         &kp R  &kp K  &kp T                &kp D                  &kp N
+&kp Q             &mt AMPERSAND QUESTION  &kp J                 &kp V          &lt 5 COMMA            &kp PERIOD                          &kp BACKSPACE  &kp Z  &kp G  &kp B                &kp L                  &kp M
+&lt 7 LANGUAGE_2  &tog 1                  &kp LG(Z)             &kp LS(LG(Z))  &kp LEFT_SHIFT         &kp SPACE   &mkp MB1  &mky_L 6 MB2  &lt 4 ENTER                  &mt RIGHT_ALT MINUS  &mt RIGHT_CONTROL TAB  &mt RIGHT_COMMAND LANGUAGE_1
             >;
         };
 
@@ -83,7 +83,16 @@
             >;
         };
 
-        mouse_Layer {
+        mouse_Layer_1 {
+            bindings = <
+&kp ESCAPE            &mt END HOME          &kp GLOBE      &kp C            &kp LG(INTERNATIONAL_3)                              &trans  &mt RG(F3) F3    &mkp MB4      &mkp MB5       &mkp MB1        &mkp MB2
+&kp LS(LG(NUMBER_2))  &kp LS(LG(NUMBER_1))  &kp LS(LG(X))  &kp LS(LC(TAB))  &kp LC(TAB)                                          &trans  &kp RS(RC(TAB))  &kp RC(TAB)   &mkp MB3       &msc SCRL_DOWN  &msc SCRL_UP
+&kp LS(LG(V))         &kp LS(LG(NUMBER_4))  &kp LS(LG(F))  &kp LC(LEFT)     &kp LC(RIGHT)            &trans                      &trans  &trans           &kp RC(LEFT)  &kp RC(RIGHT)  &msc SCRL_LEFT  &msc SCRL_RIGHT
+&trans                &trans                &mkp MB4       &mkp MB5         &trans                   &mkp MB2  &mkp MB1  &trans  &trans                                 &trans         &trans          &trans
+            >;
+        };
+
+        mouse_Layer_2 {
             bindings = <
 &kp ESCAPE            &mt END HOME          &kp GLOBE      &kp C            &kp LG(INTERNATIONAL_3)                          &trans  &mt RG(F3) F3          &kp RS(LEFT)  &kp RS(UP)    &kp RS(RIGHT)  &kp RG(INTERNATIONAL_3)
 &kp LS(LG(NUMBER_2))  &kp LS(LG(NUMBER_1))  &kp LS(LG(X))  &kp LS(LC(TAB))  &kp LC(TAB)                                      &trans  &kp RG(RIGHT_CONTROL)  &kp UP        &kp RS(DOWN)  &mkp MB3       &kp RG(LEFT)
@@ -110,21 +119,12 @@
             >;
         };
 
-        layer_7 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans
-            >;
-        };
-
         wireless {
             bindings = <
-&bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1    &bt BT_SEL 0                                &trans  &trans  &trans  &trans  &trans  &trans
-&trans        &trans        &trans        &trans          &trans                                      &trans  &trans  &trans  &trans  &trans  &trans
-&trans        &trans        &trans        &trans          &bt BT_CLR_ALL  &bt BT_CLR                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans        &trans        &bootloader   &studio_unlock  &trans          &trans      &trans  &trans  &trans                  &trans  &trans  &trans
+&bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1    &bt BT_SEL 0                                &trans  &kp D  &kp D  &kp D   &kp D   &kp D
+&kp B         &kp B         &kp B         &kp A           &kp A                                       &trans  &kp D  &kp D  &kp D   &kp D   &kp D
+&kp B         &kp C         &kp B         &kp A           &bt BT_CLR_ALL  &bt BT_CLR                  &trans  &kp C  &kp D  &kp D   &kp C   &kp B
+&trans        &trans        &bootloader   &studio_unlock  &trans          &trans      &trans  &trans  &trans                &trans  &trans  &trans
             >;
         };
     };
