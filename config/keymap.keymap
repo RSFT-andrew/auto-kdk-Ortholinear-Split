@@ -85,10 +85,10 @@
 
         mouse_Layer_1 {
             bindings = <
-&kp ESCAPE            &mt END HOME          &kp GLOBE      &kp C            &kp LG(INTERNATIONAL_3)                              &trans  &mt RG(F3) F3    &mkp MB4      &mkp MB5       &mkp MB1        &mkp MB2
-&kp LS(LG(NUMBER_2))  &kp LS(LG(NUMBER_1))  &kp LS(LG(X))  &kp LS(LC(TAB))  &kp LC(TAB)                                          &trans  &kp RS(RC(TAB))  &kp RC(TAB)   &mkp MB3       &msc SCRL_DOWN  &msc SCRL_UP
-&kp LS(LG(V))         &kp LS(LG(NUMBER_4))  &kp LS(LG(F))  &kp LC(LEFT)     &kp LC(RIGHT)            &trans                      &trans  &trans           &kp RC(LEFT)  &kp RC(RIGHT)  &msc SCRL_LEFT  &msc SCRL_RIGHT
-&trans                &trans                &mkp MB4       &mkp MB5         &trans                   &mkp MB2  &mkp MB1  &trans  &trans                                 &trans         &trans          &trans
+&kp ESCAPE            &mt END HOME          &kp GLOBE      &kp C                   &kp LG(INTERNATIONAL_3)                              &trans  &mt RG(F3) F3    &mkp MB4      &mkp MB5       &mkp MB1        &mkp MB2
+&kp LS(LG(NUMBER_2))  &kp LS(LG(NUMBER_1))  &kp LS(LG(X))  &kp LS(LC(TAB))         &kp LC(TAB)                                          &trans  &kp RS(RC(TAB))  &kp RC(TAB)   &mkp MB3       &msc SCRL_DOWN  &msc SCRL_UP
+&kp LS(LG(V))         &kp LS(LG(NUMBER_4))  &kp LS(LG(F))  &mt LC(LEFT) LC(RIGHT)  &trans                   &trans                      &trans  &trans           &kp RC(LEFT)  &kp RC(RIGHT)  &msc SCRL_LEFT  &msc SCRL_RIGHT
+&trans                &trans                &mkp MB4       &mkp MB5                &trans                   &mkp MB2  &mkp MB1  &trans  &trans                                 &trans         &trans          &trans
             >;
         };
 
