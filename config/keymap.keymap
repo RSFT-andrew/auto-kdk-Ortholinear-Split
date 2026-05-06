@@ -61,7 +61,7 @@
 &kp W             &kp E                   &kp LEFT_PARENTHESIS  &kp I          &kp RIGHT_PARENTHESIS                                      &none          &kp F  &kp S  &kp Y                &kp H                  &kp P
 &kp A             &kp U                   &kp X                 &kp C          &kp O                                                      &tog 3         &kp R  &kp K  &kp T                &kp D                  &kp N
 &kp Q             &mt AMPERSAND QUESTION  &kp J                 &kp V          &lt 5 COMMA            &kp PERIOD                          &kp BACKSPACE  &kp Z  &kp G  &kp B                &kp L                  &kp M
-&lt 7 LANGUAGE_2  &tog 1                  &kp LG(Z)             &kp LS(LG(Z))  &kp LEFT_SHIFT         &kp SPACE   &mkp MB1  &mky_L 6 MB2  &lt 4 ENTER                  &mt RIGHT_ALT MINUS  &mt RIGHT_CONTROL TAB  &mt RIGHT_COMMAND LANGUAGE_1
+&lt 7 LANGUAGE_2  &tog 1                  &kp LG(Z)             &kp LS(LG(Z))  &kp LEFT_SHIFT         &kp SPACE   &mkp MB1  &mky_L 4 MB2  &lt 6 ENTER                  &mt RIGHT_ALT MINUS  &mt RIGHT_CONTROL TAB  &mt RIGHT_COMMAND LANGUAGE_1
             >;
         };
 
