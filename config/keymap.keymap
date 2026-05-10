@@ -53,24 +53,24 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        to_Layer0 {
+            bindings = <&to 0>;
+            key-positions = <18 19>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
 &kp W             &kp E                   &kp LEFT_PARENTHESIS  &kp I          &kp RIGHT_PARENTHESIS                                      &kp RG(INTERNATIONAL_3)  &kp F  &kp S  &kp Y                &kp H                  &kp P
-&kp A             &kp U                   &kp X                 &kp C          &kp O                                                      &tog 4                   &kp R  &kp K  &kp T                &kp D                  &kp N
-&kp Q             &mt AMPERSAND QUESTION  &kp J                 &kp V          &lt 6 COMMA            &kp PERIOD                          &kp BACKSPACE            &kp Z  &kp G  &kp B                &kp L                  &kp M
-&lt 8 LANGUAGE_2  &tog 3                  &kp LG(Z)             &kp LS(LG(Z))  &kp LEFT_SHIFT         &kp SPACE   &mkp MB1  &mky_L 7 MB2  &lt 5 ENTER                            &mt RIGHT_ALT MINUS  &mt RIGHT_CONTROL TAB  &mt RIGHT_COMMAND LANGUAGE_1
-            >;
-        };
-
-        layer_8 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans
+&kp A             &kp U                   &kp X                 &kp C          &kp O                                                      &tog 3                   &kp R  &kp K  &kp T                &kp D                  &kp N
+&kp Q             &mt AMPERSAND QUESTION  &kp J                 &kp V          &lt 5 COMMA            &kp PERIOD                          &kp BACKSPACE            &kp Z  &kp G  &kp B                &kp L                  &kp M
+&lt 7 LANGUAGE_2  &tog 2                  &kp LG(Z)             &kp LS(LG(Z))  &kp LEFT_SHIFT         &kp SPACE   &mkp MB1  &mky_L 6 MB2  &lt 4 ENTER                            &mt RIGHT_ALT MINUS  &mt RIGHT_CONTROL TAB  &mt RIGHT_COMMAND LANGUAGE_1
             >;
         };
 
@@ -94,10 +94,10 @@
 
         mouse_Layer_1 {
             bindings = <
-&kp ESCAPE            &mt END HOME          &kp GLOBE      &kp C                   &kp LG(INTERNATIONAL_3)                              &trans  &mt RG(F3) F3    &mkp MB4       &mkp MB5  &mkp MB1        &mkp MB2
-&kp LS(LG(NUMBER_2))  &kp LS(LG(NUMBER_1))  &kp LS(LG(X))  &kp LS(LC(TAB))         &kp LC(TAB)                                          &trans  &kp RS(RC(TAB))  &kp RC(TAB)    &mkp MB3  &msc SCRL_DOWN  &msc SCRL_UP
-&kp LS(LG(V))         &kp LS(LG(NUMBER_4))  &kp LS(LG(F))  &mt LC(LEFT) LC(RIGHT)  &trans                   &trans                      &trans  &kp RC(LEFT)     &kp RC(RIGHT)  &none     &msc SCRL_LEFT  &msc SCRL_RIGHT
-&trans                &trans                &mkp MB4       &mkp MB5                &mkp MB3                 &mkp MB2  &mkp MB1  &trans  &trans                                  &trans    &trans          &trans
+&kp ESCAPE            &mt END HOME          &kp GLOBE      &kp C                   &kp LG(INTERNATIONAL_3)                              &trans  &mt RG(F3) F3    &mkp MB4       &mkp MB5          &mkp MB1        &mkp MB2
+&kp LS(LG(NUMBER_2))  &kp LS(LG(NUMBER_1))  &kp LS(LG(X))  &kp LS(LC(TAB))         &kp LC(TAB)                                          &trans  &kp RS(RC(TAB))  &kp RC(TAB)    &mkp MB3          &msc SCRL_DOWN  &msc SCRL_UP
+&kp LS(LG(V))         &kp LS(LG(NUMBER_4))  &kp LS(LG(F))  &mt LC(LEFT) LC(RIGHT)  &trans                   &trans                      &trans  &kp RC(LEFT)     &kp RC(RIGHT)  &mky_H_T MB2 MB1  &msc SCRL_LEFT  &msc SCRL_RIGHT
+&trans                &trans                &mkp MB4       &mkp MB5                &mkp MB3                 &mkp MB2  &mkp MB1  &trans  &trans                                  &trans            &trans          &trans
             >;
         };
 
