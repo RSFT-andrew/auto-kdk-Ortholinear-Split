@@ -40,7 +40,7 @@
             hold-trigger-key-positions = <41>;
             quick-tap-ms = <(-1)>;
             require-prior-idle-ms = <(-1)>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <180>;
         };
 
         mky_H_T: mousekey_hold_tap {
