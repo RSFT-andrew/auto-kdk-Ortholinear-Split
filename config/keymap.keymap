@@ -53,14 +53,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        to_Layer0 {
-            bindings = <&to 0>;
-            key-positions = <18 19>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
